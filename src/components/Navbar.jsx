@@ -7,7 +7,7 @@ import { menu, close } from '../assets'
 const Navbar = () => {
 
   const [active, setActive] = React.useState('')
-  const [toggleMenu, setToggleMenu] = React.useState(false)
+  const [toggleMenu, setToggleMenu] = React.useState(true)
   return (
     <nav className={`${styles.paddingX} w-full flex items-center fixed top-0 z-20 py-5`}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -34,7 +34,7 @@ const Navbar = () => {
               className='w-[20px] h-[20px] object-contain cursor-pointer'
               onClick={() => setToggleMenu(!toggleMenu)}
             />
-            <div className={`${!toggleMenu ? 'flex':'hidden'} p-6 black-gradient absolute top-20 right-0 min-w-[150px] mx-5 my-2 rounded-xl`}>
+            <div className={`${toggleMenu ? 'hidden':'flex'} p-6 black-gradient absolute top-20 right-0 min-w-[150px] mx-5 my-2 rounded-xl`}>
             <ul className='list-none flex flex-col gap-4'>
               {navLinks.map((link) => (
                 <li 
