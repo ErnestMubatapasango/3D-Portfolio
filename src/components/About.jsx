@@ -4,10 +4,11 @@ import {Tilt} from 'react-tilt' //helps with tilting the about components
 import {styles} from '../styles'
 import {services} from '../constants'
 import {fadeIn, textVariant} from '../utils/motion'
+import { SectionWrapper } from '../hoc'
 
 const ServiceCard = ({index, title, icon}) => {
   return(
-    <Tilt className="xs:w-[200px] w-full">
+    <Tilt className="xs:w-[180px] w-full">
       <motion.div 
       variants={fadeIn("right","spring",0.5 * index, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -37,7 +38,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introdction</p>
+        <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
       {/**the fade in variant takes in 4 parameters namely direction type delay duration  */}
@@ -59,4 +60,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SectionWrapper(About, "about")
