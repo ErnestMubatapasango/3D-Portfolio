@@ -16,8 +16,7 @@ const Contact = () => {
 
 const [loading, setLoading] = React.useState(false)
 
-function handleChange(event){
-    const {name, value} = event.target
+function handleChange(){
    
   }
 
@@ -90,7 +89,7 @@ function handleSubmit(event){
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        <EarthCanvas />
+        <EarthCanvas /> 
       </motion.div>
     </div>
   )
