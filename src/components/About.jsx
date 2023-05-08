@@ -44,7 +44,7 @@ const About = () => {
       {/**the fade in variant takes in 4 parameters namely direction type delay duration  */}
       <motion.p variants={fadeIn("","",0.1,1)} className='text-secondary text-[15px] max-w-3xl leading-[25px] '>
         I&apos;m a skilled software developer with experience in JavaScript and expertise in frameworks
-        like React.js, Node.js and Next.js. I have a strong understanding of building scalable and efficient web applications. I
+        like React.js and Next.js. I have a strong understanding of building scalable and efficient web applications. I
         possess a keen eye for detail and can efficiently translate designs mockups into functional, user-friendly interfaces. My 
         passion for coding and eagerness to learn new technologies allows me to adapt to any project&apos;s needs seamlessly. I am a team 
         player, and l thrive in collaborative environments, where l can work with like-minded professionals to deliver high-quality, 

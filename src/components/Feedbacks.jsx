@@ -9,7 +9,7 @@ const FeedbackCard = ({index, testimonial, name, designation, company,image}) =>
   return(
     <motion.div
       variants={fadeIn("", "spring", index * 0.5, 0.75)} //index * 0.5 - each card after the previous card has loaded
-      className='bg-black-200 p-10 rounded-3xl xs:w-[250px] w-full'
+      className='bg-black-200 p-10 rounded-3xl xs:w-[300px] w-full'
     >
       <p className='text-blue-500 text-[48px]'><ImQuotesLeft/></p>
       <div className='mt-1'>
@@ -21,7 +21,7 @@ const FeedbackCard = ({index, testimonial, name, designation, company,image}) =>
               <span className='blue-text-gradient'>@</span> {name}
             </p>
             <p className='text-secondary mt-1 text-[12px]'>
-              {designation} of {company}
+              {designation} at {company}
             </p>
           </div>
 

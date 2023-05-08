@@ -25,12 +25,22 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
+import ernest_logo from './company/ernest_logo.png'
+import zpc from './company/zpc.png'
+import mohcc from './company/mohcc.png'
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import demo from "./demo.png"
+import medical from "./medical.png"
+import rest from "./rest.png"
+import electron from "./electron.png"
 
 export {
+  electron,
+  rest,
+  medical,
+  demo,
   logo,
   backend,
   creator,
@@ -59,4 +69,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  ernest_logo,
+  zpc,
+  mohcc,
 };

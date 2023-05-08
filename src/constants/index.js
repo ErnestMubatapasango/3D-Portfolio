@@ -4,25 +4,32 @@ import {
     creator,
     web,
     javascript,
-    typescript,
+    ernest_logo,
+    mohcc,
+    zpc,
     html,
     css,
     reactjs,
     redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    // typescript,
+    // mongodb,
+    // docker,
+    // meta,
+    // starbucks,
+    // tesla,
+    // shopify,
+    // threejs,
     carrent,
     jobit,
     tripguide,
-    threejs,
+    medical,
+    rest,
+    electron
+    
   } from "../assets";
   
   export const navLinks = [
@@ -102,8 +109,8 @@ import {
     {
       title: "IT Intern",
       company_name: "Zimbabwe Power Company",
-      icon: starbucks,
-      iconBg: "#383E56",
+      icon: zpc,
+      iconBg: "#fff", //#383E56
       date: "January 2020 - July 2021",
       points: [
         "Business application support.",
@@ -115,9 +122,9 @@ import {
     {
       title: "IT Support Technician",
       company_name: "Ministry of Health and Child Care",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2022 - Jan 2023",
+      icon: mohcc,
+      iconBg: "#383E56", //E6DEDD
+      date: "Jan 2022 - April 2023",
       points: [
         "Training and Technical support for various practice specific software and firm proprietary software.",
         "Recording and triaging service requests to determine priority, assignment and routing.",
@@ -128,8 +135,8 @@ import {
     {
       title: "Web Developer",
       company_name: "Ernest Dev",
-      icon: shopify,
-      iconBg: "#383E56",
+      icon: ernest_logo,
+      iconBg: "#ffff",
       date: "Jan 2023 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
@@ -143,24 +150,24 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
+        "I thought it was impossible to make a website as beautiful as our product, but Enerst proved me wrong.",
+      name: "Nancy Paguwa",
+      designation: "Private Tutor",
+      company: "Nacata",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
+        "I've never met a web developer who truly cares about their clients' success like Enerst does.",
+      name: "Solomon Muyambo",
       designation: "COO",
-      company: "DEF Corp",
+      company: "Delta FX",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
+        "After Enerst optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      name: "Lisa Thomas",
       designation: "CTO",
       company: "456 Enterprises",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
@@ -169,37 +176,34 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Medical Centre",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Landing page for a medical centre that offers comprehensive and compassionate healthcare services to patients. ",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
         },
         {
           name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: medical,
       source_code_link: "https://github.com/",
+      live_app_link: "https://entumbane-medical-centre.web.app/"
     },
     {
-      name: "Job IT",
+      name: "Restaurant",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        `This is a landing page for a restaurant that offers a seamless dining experience. Book a table with ease, explore the menu and enjoy.`,
       tags: [
         {
-          name: "react",
+          name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "styled components",
           color: "green-text-gradient",
         },
         {
@@ -207,29 +211,35 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: rest,
       source_code_link: "https://github.com/",
+      live_app_link: "https://valtru-restaurant.web.app/"
     },
     {
-      name: "Trip Guide",
+      name: "POS Web App",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A comprehensive Point of Sale application that manages inventory, process PaymentResponse, and enhances business experience effortlessly",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "SQL",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "electronjs",
+          color: "blue-text-gradient",
+        },
       ],
-      image: tripguide,
+      image: electron,
       source_code_link: "https://github.com/",
+      live_app_link: "https://github.com/ErnestMubatapasango/EasyRetail_App"
     },
   ];
   
