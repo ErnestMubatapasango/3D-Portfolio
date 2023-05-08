@@ -16,8 +16,13 @@ const Contact = () => {
 
 const [loading, setLoading] = React.useState(false)
 
-function handleChange(){
-   
+function handleChange(event){
+   const {name, value} = event.target
+   setFormData(prevFormData => {
+    return(
+      {...prevFormData, [name]: value}
+    )
+   })
   }
 
 function handleSubmit(event){
