@@ -6,6 +6,7 @@ import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 
+
 const Contact = () => {
   const formRef = useRef()
   const [formData, setFormData] = React.useState({
@@ -25,8 +26,36 @@ function handleChange(event){
    })
   }
 
+  //YhjDP7r__yY-tjtoe
+//template_njuinwq
+//service_whec0nn
 function handleSubmit(event){
   event.preventDefault()
+  setLoading(true)
+  emailjs.send(
+    'service_whec0nn',
+    'template_njuinwq',
+    {
+      from_name: formData.name,
+      to_name: 'Tawanda Mubatapasango',
+      from_email: formData.email,
+      to_email: 'tawandamubatapasango@gmail.com',
+      message: formData.message
+
+    },
+    'YhjDP7r__yY-tjtoe'
+  )
+  .then(() => {
+    setLoading(false);
+    alert("Thank you. l will get back to you as soon as possible.");
+
+    setFormData({ name: '', email: '', message: ''})
+  }, (error) => {
+    setLoading(false)
+    console.log(error)
+    alert("Something went wrong.")
+  })
+  
 }
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
