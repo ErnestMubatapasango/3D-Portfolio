@@ -124,7 +124,7 @@ import {
       company_name: "Ministry of Health and Child Care",
       icon: mohcc,
       iconBg: "#383E56", //E6DEDD
-      date: "Jan 2022 - April 2023",
+      date: "Jan 2022 - Present",
       points: [
         "Training and Technical support for various practice specific software and firm proprietary software.",
         "Recording and triaging service requests to determine priority, assignment and routing.",
@@ -137,7 +137,7 @@ import {
       company_name: "Ernest Dev",
       icon: ernest_logo,
       iconBg: "#ffff",
-      date: "Jan 2023 - Present",
+      date: "Jan 2022 - Remote",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
